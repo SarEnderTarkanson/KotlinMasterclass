@@ -1,7 +1,17 @@
 package com.example.kotlinbasics
 
 fun main() {
+var myResult = add(4,6)
 
+println(myResult)
+}
+
+fun add (num: Int, num2: Int): Int {
+    val result = num + num2
+    return result
+}
+
+fun askCoffeeDetails () {
     println("Who is this coffee for?")
 
     var name = readln()
