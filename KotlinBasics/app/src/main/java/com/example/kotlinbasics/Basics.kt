@@ -1,9 +1,14 @@
 package com.example.kotlinbasics
 
 fun main() {
-var myResult = add(4,6)
+var myResult = divide(4,6)
 
 println(myResult)
+}
+
+fun divide(num1: Int, num2:Int): Double {
+    val result = num1 / num2.toDouble()
+    return result
 }
 
 fun add (num: Int, num2: Int): Int {
