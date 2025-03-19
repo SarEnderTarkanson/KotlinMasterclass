@@ -1,20 +1,9 @@
 package com.example.kotlinbasics
 
 fun main() {
-var myResult = divide(4,6)
-
-println(myResult)
+var daisy = Dog()
 }
 
-fun divide(num1: Int, num2:Int): Double {
-    val result = num1 / num2.toDouble()
-    return result
-}
-
-fun add (num: Int, num2: Int): Int {
-    val result = num + num2
-    return result
-}
 
 fun askCoffeeDetails () {
     println("Who is this coffee for?")
