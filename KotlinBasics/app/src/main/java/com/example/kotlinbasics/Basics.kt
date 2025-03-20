@@ -1,11 +1,12 @@
 package com.example.kotlinbasics
 
 fun main() {
-var daisy = Dog()
+    var daisy = Dog("Daisy", "Dwarf Poodle", 15)
+    println("${daisy.name} is a ${daisy.breed} and is ${daisy.age}")
 }
 
 
-fun askCoffeeDetails () {
+fun askCoffeeDetails() {
     println("Who is this coffee for?")
 
     var name = readln()
