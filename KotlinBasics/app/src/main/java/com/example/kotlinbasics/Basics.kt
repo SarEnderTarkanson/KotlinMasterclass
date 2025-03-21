@@ -3,6 +3,10 @@ package com.example.kotlinbasics
 fun main() {
     var daisy = Dog("Daisy", "Dwarf Poodle", 15)
     println("${daisy.name} is a ${daisy.breed} and is ${daisy.age}")
+    daisy.age = 2
+    println("${daisy.name} is a ${daisy.breed} and is ${daisy.age}")
+    daisy.name = "Meggi"
+    println("${daisy.name} is a ${daisy.breed} and is ${daisy.age}")
 }
 
 
