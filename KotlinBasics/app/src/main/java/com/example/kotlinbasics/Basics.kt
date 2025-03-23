@@ -1,18 +1,24 @@
 package com.example.kotlinbasics
 
+fun main() {
+
+    val shoppingList = listOf("Processor", "RAM", "Graphics Card", "SSD")
+    val shoppingList2 = mutableListOf("Processor", "RAM", "Graphics Card", "SSD")
+    println(shoppingList2)
+    shoppingList2.add(0, "Keyboard")
+    println(shoppingList2)
+    shoppingList2.removeAt(0)
+    println(shoppingList2)
+}
+
+
+/*
 data class CoffeeDetails(
     val sugarCount: Int,
     val name: String,
     val size: String,
     val creamAmount: Int
 )
-
-
-fun main() {
-    val coffeeForDennis = CoffeeDetails(0, "Dennis", "XXL", 0)
-    makeCoffee(coffeeForDennis)
-}
-
 
 fun askCoffeeDetails() {
     println("Who is this coffee for?")
@@ -35,3 +41,4 @@ fun makeCoffee(coffeeDetails: CoffeeDetails) {
         else -> println("Coffee with ${coffeeDetails.sugarCount} spoons of sugar for ${coffeeDetails.name}.")
     }
 }
+*/
