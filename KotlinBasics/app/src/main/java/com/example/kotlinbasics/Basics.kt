@@ -11,8 +11,21 @@ fun main() {
     println(shoppingList2)
     shoppingList2.removeAt(1)
     println(shoppingList2)
-    shoppingList2.add(2, "Cooling System")
+    shoppingList2.add(2, "Mouse")
     println(shoppingList2)
+    println(shoppingList2[2])
+    shoppingList2[2] = "Apple Mouse"
+    println(shoppingList2)
+    println(shoppingList2[2])
+
+    val term = "RAM"
+
+    val hasTerm = shoppingList2.contains(term)
+    if (hasTerm) {
+        println("Has the $term in the list")
+    } else {
+        println("Doesn't have the $term in the list")
+    }
 }
 
 
