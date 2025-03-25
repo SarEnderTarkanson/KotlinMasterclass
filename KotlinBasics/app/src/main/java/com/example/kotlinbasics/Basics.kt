@@ -26,6 +26,10 @@ fun main() {
     } else {
         println("Doesn't have the $term in the list")
     }
+
+    for (item in 0 until shoppingList2.size) {
+        println("Item ${shoppingList2[item]} is at index $item")
+    }
 }
 
 
