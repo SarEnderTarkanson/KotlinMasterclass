@@ -7,7 +7,11 @@ fun main() {
     println(shoppingList2)
     shoppingList2.add(0, "Keyboard")
     println(shoppingList2)
-    shoppingList2.removeAt(0)
+    shoppingList2.remove("SSD")
+    println(shoppingList2)
+    shoppingList2.removeAt(1)
+    println(shoppingList2)
+    shoppingList2.add(2, "Cooling System")
     println(shoppingList2)
 }
 
