@@ -29,4 +29,9 @@ class BankAccount (
             }
         }
 
+        fun acctBalance():Double{
+            println(balance)
+            return balance
+        }
+
 }

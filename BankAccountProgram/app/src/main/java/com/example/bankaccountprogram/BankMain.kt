@@ -1,12 +1,13 @@
 package com.example.bankaccountprogram
 
 fun main(){
-    val alpysBankAccount = BankAccount("Alpy", 1178.12)
-    println(alpysBankAccount.accountHolder)
-    alpysBankAccount.deposit(1.0)
-    println(alpysBankAccount.balance)
-    alpysBankAccount.displayTransactionHistory()
-    alpysBankAccount.withdraw(2.0)
-    alpysBankAccount.displayTransactionHistory()
-    println("${alpysBankAccount.accountHolder}'s balance is ${alpysBankAccount.balance}")
+    val sarahsBankAccount = BankAccount("Sarah", 0.0)
+    sarahsBankAccount.deposit(100.0)
+    sarahsBankAccount.acctBalance()
+    sarahsBankAccount.withdraw((10.0))
+    sarahsBankAccount.acctBalance()
+    sarahsBankAccount.deposit(300.0)
+    sarahsBankAccount.acctBalance()
+    sarahsBankAccount.displayTransactionHistory()
+    sarahsBankAccount.acctBalance()
 }
