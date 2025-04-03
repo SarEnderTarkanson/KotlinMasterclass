@@ -41,7 +41,7 @@ fun UnitConverter(modifier: Modifier = Modifier) {
             .fillMaxSize()
     ) {
         Text("Unit Converter")
-        OutlinedTextField(value= "Enter Value", onValueChange = {})
+        OutlinedTextField(value = "Enter Value", onValueChange = {})
         Row {
 
         }
@@ -50,8 +50,6 @@ fun UnitConverter(modifier: Modifier = Modifier) {
 
 @Preview(showBackground = true)
 @Composable
-fun GreetingPreview() {
-    UnitConverterTheme {
-
-    }
+fun UnitConverterPreview() {
+    UnitConverter()
 }
