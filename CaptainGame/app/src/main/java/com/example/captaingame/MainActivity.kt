@@ -42,6 +42,7 @@ fun CaptainGame(modifier: Modifier = Modifier) {
     Column(modifier = modifier) {
         Text(text = "Treasures found: ${treasuresFound.value}")
         Text(text = "Current direction: ${direction.value}")
+        Text(text = stormOrTreasure.value)
         Button(onClick = {
             direction.value = "East"
             if (Random.nextBoolean()) {
@@ -86,7 +87,7 @@ fun CaptainGame(modifier: Modifier = Modifier) {
         }) {
             Text(text = "Sail South")
         }
-        Text(text = stormOrTreasure.value)
+
     }
 }
 
