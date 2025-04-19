@@ -69,24 +69,29 @@ fun UnitConverter(modifier: Modifier = Modifier) {
     ) {
         Text("Unit Converter")
         Spacer(modifier = Modifier.padding(16.dp))
-        OutlinedTextField(value = inputValue, onValueChange = {
-            inputValue = it
+        OutlinedTextField(
+            value = inputValue, onValueChange = {
+                inputValue = it
             },
             label = { Text("Enter Value") })
         Spacer(modifier = Modifier.padding(16.dp))
         Row {
             Box {
-                Button(onClick = {}) {
+                Button(onClick = { iExpanded = true }) {
                     Text("Select")
                     Icon(
                         Icons.Default.ArrowDropDown,
                         contentDescription = "Arrow Down"
                     )
                 }
-                DropdownMenu(expanded = false, onDismissRequest = {}) {
+                DropdownMenu(expanded = iExpanded, onDismissRequest = { iExpanded = false }) {
                     DropdownMenuItem(
                         text = { Text("Centimeters") },
-                        onClick = {}
+                        onClick = {
+                            iExpanded=false
+                            inputUnit = "Centimeters"
+                            conversionFactor.value = 0.01
+                        }
                     )
                     DropdownMenuItem(
                         text = { Text("Meters") },
@@ -104,14 +109,14 @@ fun UnitConverter(modifier: Modifier = Modifier) {
             }
             Spacer(modifier = Modifier.width(16.dp))
             Box {
-                Button(onClick = {}) {
+                Button(onClick = { oExpanded = true }) {
                     Text("Select")
                     Icon(
                         Icons.Default.ArrowDropDown,
                         contentDescription = "Arrow Down"
                     )
                 }
-                DropdownMenu(expanded = false, onDismissRequest = {}) {
+                DropdownMenu(expanded = oExpanded, onDismissRequest = { oExpanded = false }) {
                     DropdownMenuItem(
                         text = { Text("Centimeters") },
                         onClick = {}
